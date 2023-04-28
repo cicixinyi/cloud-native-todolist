@@ -11,6 +11,11 @@ public class TodoListApplication {
 
 	private List<String> tasks = new ArrayList<String>();
 
+	@GetMapping("/")
+	public String start() {
+		return "To Do List\n\n";		
+	}
+
 	@PostMapping("/tasks")
 	public String createTask(@RequestBody String task) {
 		tasks.add(task);
@@ -18,8 +23,13 @@ public class TodoListApplication {
 	}
 
 	@GetMapping("/tasks")
-	public List<String> getTasks() {
-		return tasks;
+	public String getTasks() {
+		if(tasks.isEmpty()) {
+			return "Currently no tasks. /nPlease add tasks if you plan to do something";
+		}			
+		else {
+			return "Here is your plan: /n" + tasks;
+		}		
 	}
 
 	@PutMapping("/tasks/{index}")
@@ -41,7 +51,7 @@ public class TodoListApplication {
 			return "Task not found";
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(TodoListApplication.class, args);
 	}
