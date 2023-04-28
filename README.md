@@ -5,3 +5,4 @@ The project is about todo list, user can add, edit and delete the things that th
 The estimated modules includes User interface, Microservice, Database.
 The whole project will be written in Java. If it's a website, it needs user interface, information needed for read.
 
+excalidraw for the diagram
