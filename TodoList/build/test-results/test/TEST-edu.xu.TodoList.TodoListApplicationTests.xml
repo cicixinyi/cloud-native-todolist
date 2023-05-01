@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.xu.TodoList.TodoListApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-01T04:47:39" hostname="10-252-180-129.student.trincoll.edu" time="0.634">
+  <properties/>
+  <testcase name="contextLoads()" classname="edu.xu.TodoList.TodoListApplicationTests" time="0.634"/>
+  <system-out><![CDATA[00:47:37.132 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [TodoListApplicationTests]: using SpringBootContextLoader
+00:47:37.142 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [edu.xu.TodoList.TodoListApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:47:37.143 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [edu.xu.TodoList.TodoListApplicationTests]: TodoListApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:47:37.178 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [TodoListApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+00:47:37.306 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/xinyixu/Desktop/TodoList/build/classes/java/main/edu/xu/TodoList/TodoListApplication.class]
+00:47:37.308 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration edu.xu.TodoList.TodoListApplication for test class edu.xu.TodoList.TodoListApplicationTests
+00:47:37.445 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+00:47:37.447 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+00:47:37.449 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [TodoListApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+00:47:37.451 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [TodoListApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-01T00:47:37.901-04:00  INFO 1428 --- [    Test worker] e.xu.TodoList.TodoListApplicationTests   : Starting TodoListApplicationTests using Java 19.0.2 with PID 1428 (started by xinyixu in /Users/xinyixu/Desktop/TodoList)
+2023-05-01T00:47:37.903-04:00  INFO 1428 --- [    Test worker] e.xu.TodoList.TodoListApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-05-01T00:47:39.755-04:00  INFO 1428 --- [    Test worker] e.xu.TodoList.TodoListApplicationTests   : Started TodoListApplicationTests in 2.236 seconds (process running for 3.922)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
