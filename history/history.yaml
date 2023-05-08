@@ -20,6 +20,13 @@ spec:
         name: alltask
         ports:
         -containerPort: 6080
+        env:
+            - name: LISTEN_BROKER
+              value: nats
+            - name: LISTEN_OPTIONS_SERVERS
+              value: nats://listen-broker.default.svc.cluster.local:4222
+            - name: LISTEN_CHANNELS
+              value: notifications
 ---
 apiVersion: v1
 kind: Service
@@ -30,6 +37,5 @@ spec:
   selector:
     app: history
   ports:
-  - protocol: TCP
-    port: 6080
-    targetPort: 6080
+    - port: 6080
+      targetPort: 6080
