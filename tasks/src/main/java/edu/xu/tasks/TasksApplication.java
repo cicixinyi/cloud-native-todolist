@@ -11,11 +11,6 @@ public class TasksApplication {
 
 	private List<String> tasks = new ArrayList<String>();
 
-	@GetMapping("/")
-	public String start() {
-		return "To Do List\n\n";		
-	}
-
 	@PostMapping("/tasks")
 	public String createTask(@RequestBody String task) {
 		tasks.add(task);
@@ -28,7 +23,7 @@ public class TasksApplication {
 			return "Currently no tasks.";
 		}			
 		else {
-			return "Here is your plan: /n" + tasks;
+			return "Here is your plan: \n" + tasks;
 		}		
 	}
 
