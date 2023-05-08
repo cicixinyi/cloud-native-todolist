@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
+@RequestMapping("/tasks")
 public class TasksApplication {
 
 	private List<String> tasks = new ArrayList<String>();
