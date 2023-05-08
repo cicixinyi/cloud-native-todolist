@@ -20,6 +20,13 @@ spec:
         name: newtask
         ports:
           - containerPort: 6080
+        env:
+            - name: LISTEN_BROKER
+              value: nats
+            - name: LISTEN_OPTIONS_SERVERS
+              value: nats://listen-broker.default.svc.cluster.local:4222
+            - name: LISTEN_CHANNELS
+              value: tasks,notifications
 ---        
 apiVersion: v1
 kind: Service
@@ -28,7 +35,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: history
+    app: todolist
   ports:
     - port: 6080
       targetPort: 6080
