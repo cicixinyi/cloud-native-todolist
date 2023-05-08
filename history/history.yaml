@@ -19,7 +19,7 @@ spec:
       - image: xxucici/alltask
         name: alltask
         ports:
-        -containerPort: 6080
+          - containerPort: 6080
         env:
             - name: LISTEN_BROKER
               value: nats
