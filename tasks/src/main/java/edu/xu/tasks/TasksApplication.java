@@ -12,11 +12,10 @@ public class TasksApplication {
 
 	private List<String> tasks = new ArrayList<String>();
 
-	@PostMapping("/tasks")
-	public String createTask(@RequestBody String task) {
-		tasks.add(task);
-		return "Task created: " + task;
-	}
+	@GetMapping("/")
+    public String home() {
+        return "Toto List";
+    }
 
 	@GetMapping("/tasks")
 	public String getTasks() {
@@ -26,6 +25,12 @@ public class TasksApplication {
 		else {
 			return "Here is your plan: \n" + tasks;
 		}		
+	}
+	
+	@PostMapping("/tasks")
+	public String createTask(@RequestBody String task) {
+		tasks.add(task);
+		return "Task created: " + task;
 	}
 
 	@PutMapping("/tasks/{index}")

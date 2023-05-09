@@ -24,7 +24,7 @@ spec:
             - name: LISTEN_BROKER
               value: nats
             - name: LISTEN_OPTIONS_SERVERS
-              value: nats://listen-broker.default.svc.cluster.local:4222
+              value: nats://listen-broker.default.svc.cluster.local:6080
             - name: LISTEN_CHANNELS
               value: tasks,notifications
 ---        
