@@ -11,11 +11,6 @@ public class TasksApplication {
 
 	private List<String> tasks = new ArrayList<String>();
 
-	@GetMapping("/")
-    public String home() {
-        return "Toto List";
-    }
-
 	@GetMapping("/tasks")
 	public String getTasks() {
 		if(tasks.isEmpty()) {
