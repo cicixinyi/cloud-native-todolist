@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/tasks")
 public class TasksApplication {
 
 	private List<String> tasks = new ArrayList<String>();
@@ -31,17 +30,6 @@ public class TasksApplication {
 	public String createTask(@RequestBody String task) {
 		tasks.add(task);
 		return "Task created: " + task;
-	}
-
-	@PutMapping("/tasks/{index}")
-	public String updateTask(@PathVariable int index, @RequestBody String task) {
-		if (index >= 0 && index < tasks.size()) {
-			tasks.set(index, task);
-			return "Task updated: " + task;
-		} 
-		else {
-			return "Task not found";
-		}
 	}
 
 	@DeleteMapping("/tasks/{index}")

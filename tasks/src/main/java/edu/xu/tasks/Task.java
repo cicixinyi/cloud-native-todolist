@@ -7,11 +7,11 @@ public class Task {
     private String description;
     private boolean completed;
 
-    public Task(Long id, String title, String description, boolean completed) {
+    public Task(Long id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.completed = completed;
+        this.completed = false;
     }
 
     public Long getId() {
@@ -42,7 +42,7 @@ public class Task {
         return completed;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
+    public void setCompleted() {
+        this.completed = true;
     }
 }
