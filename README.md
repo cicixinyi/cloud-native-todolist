@@ -1,4 +1,9 @@
-Todo List
+# cloud-native-todolist
+
+## Project Purpose
+
+## Contributors
+ Xinyi Xu
 
 This project is for CPSC 415 final project. I am going to do it myself.
 The project is about todo list, user can add, edit and delete the things that they are going to do.
