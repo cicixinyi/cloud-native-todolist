@@ -14,7 +14,7 @@
 
 ## Todo List Architecture
 
-![todolist structure](todolist structure.png)
+ ![Alt text](/main/todolist structure.jpg)
 
 ## Run the app in Kubernetes
 To run the app in Kubernetes, install Docker for Desktop Mac or Windows or choose GCP Kubernetes cluster. Each folder has one yaml file for the app. Below are the steps for running the app in platforms:
