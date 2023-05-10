@@ -14,7 +14,7 @@
 
 ## Todo List Architecture
 
-![Kata-architecture](kata-architecture.png)
+![todolist-architecture](todolist structure.png)
 
 ## Run the app in Kubernetes
 To run the app in Kubernetes, install Docker for Desktop Mac or Windows or choose GCP Kubernetes cluster. Each folder has one yaml file for the app. Below are the steps for running the app in platforms:
@@ -55,6 +55,3 @@ Once all the services have been deployed, you can test the Todo List features as
     curl -X PUT http://localhost:6080/todo/id
 
 ```
-
-
-excalidraw for the diagram
