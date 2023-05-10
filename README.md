@@ -29,16 +29,17 @@ To run the app in Kubernetes, install Docker for Desktop Mac or Windows or choos
 ```
  3. Check and watch if all the components are up and running
 ```
-  kubectl get all
+    kubectl get all
 ```
 ## Testing the App on Local Machine
 Once all the services have been deployed, you can test the Todo List features as follows:
 1. Look at the todo list. In your browser's address bar, enter the following:
-  http://localhost:6080/todo
+
+   http://localhost:6080/todo
   
 2. View the history of the todo list. In your browser's address bar, enter the following:
 
-  http://localhost:6081/history
+   http://localhost:6081/history
   
 3. To add tasks to the list. Enter the following in terminal:
 ```
@@ -53,5 +54,4 @@ Once all the services have been deployed, you can test the Todo List features as
 5. To update status when the task finished. Remember the task's id number and enter the following in terminal:
 ```
     curl -X PUT http://localhost:6080/todo/id
-
 ```
