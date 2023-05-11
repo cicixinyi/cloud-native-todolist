@@ -33,7 +33,7 @@ To run the app in Kubernetes, install Docker for Desktop Mac or Windows or choos
 ```
 ## Testing the App on Local Machine
 Once all the services have been deployed, you can test the Todo List features as follows:
-1. Look at the todo list. In your browser's address bar, enter the following:
+1. To look at and edit the todo list. In your browser's address bar, enter the following:
 
    http://localhost:6080/todo
   
@@ -41,17 +41,34 @@ Once all the services have been deployed, you can test the Todo List features as
 
    http://localhost:6081/history
   
-3. To add tasks to the list. Enter the following in terminal:
+## Testing the App on GKE
+Once all the services have been deployed on the GKE cluster, you can test the Todo List features as follows:
+1. Find the external IP address of one of your nodes:
+```
+  kubectl get nodes -o wide
+
+```
+
+2. To look at and edit the todo list. In your browser's address bar, enter the following:
+
+   <EXTERNAL_IP>:6080/todo
+
+3. View Flights from the database. In your browser's address bar, enter the following:
+   
+   <EXTERNAL_IP>:6081/history
+   
+## Edit Tasks in Todo List  
+1. To add tasks to the list. Enter the following in terminal:
 ```
     curl -X POST -H "Content-Type: application/json" -d '{"title":"Your task name"}' http://localhost:6080/todo
 ```
 
-4. To delete a task. Remember the task's id number and enter the following in terminal:
+2. To delete a task. Remember the task's id number and enter the following in terminal:
 ```
     curl -X DELETE http://localhost:6080/todo/id
 ```
 
-5. To update status when the task finished. Remember the task's id number and enter the following in terminal:
+3. To update status when the task finished. Remember the task's id number and enter the following in terminal:
 ```
     curl -X PUT http://localhost:6080/todo/id
 ```
