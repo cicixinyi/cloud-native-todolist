@@ -72,3 +72,6 @@ Once all the services have been deployed on the GKE cluster, you can test the To
 ```
     curl -X PUT http://localhost:6080/todo/id
 ```
+
+## Existing Problem:
+In the history application, there is a call attempt to the todo microservice with 'http://localhost:6080/todo/'. This will not work on K8s. So the communication to history does not work. Did not get to using environment variables with a ConfigMap.
